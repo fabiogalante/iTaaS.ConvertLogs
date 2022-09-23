@@ -5,8 +5,9 @@ namespace CandidateTesting.FabioGalanteMans.Console.Services.Split
     public class SplitService : ISplitService
     {
 
-        public IEnumerable<AgoraLog> SplitAgoraLogs(string? logs)
+        public IEnumerable<AgoraLog>? SplitAgoraLogs(string? logs)
         {
+            if (logs == null) return null;
             using var sr = new StringReader(logs);
             string? lineLog = string.Empty;
             var lines = new List<string?>();
@@ -14,44 +15,14 @@ namespace CandidateTesting.FabioGalanteMans.Console.Services.Split
             while ((lineLog = sr.ReadLine()) != null)
             {
                 count++;
-               lines.Add(lineLog);
-            }
-
-            var logsTransformed = new List<AgoraLog>();
-            foreach (var line in lines)
-            {
-                var agoraLog = Transform(line);
-                logsTransformed.Add(agoraLog);
+                lines.Add(lineLog);
             }
 
 
+            return lines.Select(Transform).ToList();
 
-            return logsTransformed;
         }
 
-
-        public IEnumerable<AgoraLog> Split(Stream stream)
-        {
-            var lines = new List<string?>();
-
-            using var streamReader = new StreamReader(stream);
-            while (streamReader.ReadLine() is { } line)
-                lines.Add(line);
-
-
-            var logsTransformed = new List<AgoraLog>();
-            foreach (var line in lines)
-            {
-                var agoraLog = Transform(line);
-                logsTransformed.Add(agoraLog);
-            }
-
-
-
-            return logsTransformed;
-
-            
-        }
 
         private AgoraLog Transform(string? log)
         {

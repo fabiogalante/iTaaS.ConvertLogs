@@ -4,7 +4,6 @@ namespace CandidateTesting.FabioGalanteMans.Console.Services.Split
 {
     public interface ISplitService
     {
-        IEnumerable<AgoraLog> Split(Stream stream);
-        IEnumerable<AgoraLog> SplitAgoraLogs(string? logs);
+        IEnumerable<AgoraLog>? SplitAgoraLogs(string? logs);
     }
 }

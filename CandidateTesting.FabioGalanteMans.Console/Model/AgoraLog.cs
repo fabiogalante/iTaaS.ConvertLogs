@@ -7,7 +7,7 @@ public class AgoraLog
         Provider = "\"MINHA CDN\"";
     }
 
-    public string? Provider { get; private set; }
+    public string? Provider { get; }
     public string? Key { get; set; }
     public string? HttpMethod { get; set; }
     public string? StatusCode { get; set; }

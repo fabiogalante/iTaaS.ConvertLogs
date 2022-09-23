@@ -3,7 +3,6 @@ using CandidateTesting.FabioGalanteMans.Console.Services.File;
 using CandidateTesting.FabioGalanteMans.Console.Services.Rest;
 using CandidateTesting.FabioGalanteMans.Console.Services.Split;
 using Microsoft.Extensions.DependencyInjection;
-using static System.Net.Mime.MediaTypeNames;
 
 Console.WriteLine(Figgle.FiggleFonts.Standard.Render("iTaaS Convert Logs"));
 
@@ -17,13 +16,7 @@ var splitService = serviceProvider.GetService<ISplitService>();
 var iFileService = serviceProvider.GetService<IFileService>();
 var sourceUrl = urls[1];
 var targetPath = urls[2];
-//var result = await restService?.ReadLog(sourceUrl)!;
-
-
-var result = await restService.ReadLogs(sourceUrl);
-
-
-
+var result = await restService?.ReadLogs(sourceUrl)!;
 
 
 
