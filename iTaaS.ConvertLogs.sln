@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTesting.FabioGalanteMans.Console", "CandidateTesting.FabioGalanteMans.Console\CandidateTesting.FabioGalanteMans.Console.csproj", "{84786D60-9924-448E-8DE8-A9BCA0A314FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTesting.FabioGalanteMans.Testing", "CandidateTesting.FabioGalanteMans.Testing\CandidateTesting.FabioGalanteMans.Testing.csproj", "{F3AE4DCA-AC8E-4A8D-8A0F-C8F44E173510}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84786D60-9924-448E-8DE8-A9BCA0A314FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84786D60-9924-448E-8DE8-A9BCA0A314FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84786D60-9924-448E-8DE8-A9BCA0A314FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84786D60-9924-448E-8DE8-A9BCA0A314FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3AE4DCA-AC8E-4A8D-8A0F-C8F44E173510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AE4DCA-AC8E-4A8D-8A0F-C8F44E173510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AE4DCA-AC8E-4A8D-8A0F-C8F44E173510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AE4DCA-AC8E-4A8D-8A0F-C8F44E173510}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25AC05A3-3825-4A65-8955-F5B531C38608}
+	EndGlobalSection
+EndGlobal
