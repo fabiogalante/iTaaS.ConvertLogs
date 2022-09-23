@@ -41,7 +41,8 @@ namespace CandidateTesting.FabioGalanteMans.Testing.Services
             result.Should().NotBeNullOrEmpty();
             result.Should().HaveCountGreaterThan(0);
             result.First().FileName.Should().Be("/robots.txt");
-            result.First().Should().Be("\"MINHA CDN\" GET 200 /robots.txt 100 312 HIT");
+            result.First().Code.Should().Be("HIT");
+            result.First().HttpMethod.Should().Be("GET");
         }
 
     }
